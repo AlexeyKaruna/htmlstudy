@@ -1,13 +1,12 @@
 .parent {
-  width: 300px;
   height: 300px;
   background-color: rgb(139, 243, 139);
   display: flex;
-  flex-wrap: wrap;
-  align-content: start;
+  align-items: center;
+  justify-content: space-between;
 }
 .child {
-  width: 50px;
+  width: 150px;
   height: 50px;
   background-color: lightcoral;
   text-align: center;
