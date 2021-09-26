@@ -1,4 +1,4 @@
-.parent {
+.hat {
   height: 80px;
   background-color: rgb(139, 243, 139);
   display: flex;
@@ -7,16 +7,16 @@
   padding-left: 95px;
   padding-right: 95px;
 }
-.child {
+.left-buttons-container {
   display: flex;
   align-items: center;
-  width: 150px;
-  height: 50px;
+  height: 80px;
   text-align: center;
 }
-.button {
+button {
   height: 20px;
-  width: 60px;
   background-color: mediumturquoise;
-  margin-inline: 5px;
+}
+.button-style {
+  margin-right: 10px;
 }
