@@ -7,16 +7,11 @@
   padding-left: 95px;
   padding-right: 95px;
 }
-.left-buttons-container {
-  display: flex;
-  align-items: center;
-  height: 80px;
-  text-align: center;
-}
+
 button {
   height: 20px;
   background-color: mediumturquoise;
 }
-.button-style {
+.button_1 {
   margin-right: 10px;
 }
