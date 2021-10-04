@@ -19,3 +19,34 @@ header {
   align-items: center;
   height: 72px;
 }
+
+.header_text-to {
+  color: #626262;
+  width: 14px;
+  height: 19px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 7px;
+}
+.header_btn {
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 12px 8px;
+  background: none;
+  color: #1d1d1d;
+  font-family: "Roboto", sans-serif;
+}
+
+.header_btn.dark {
+  border: 1px solid #262626;
+  color: #ffffff;
+  background: #262626;
+  margin-left: 16px;
+}
+.header_image {
+  margin-right: 4px;
+  margin-left: 25px;
+}
