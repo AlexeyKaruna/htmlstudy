@@ -71,3 +71,27 @@ header {
 button {
   cursor: pointer;
 }
+main {
+  padding-top: 7px;
+}
+.main_item {
+  display: flex;
+  align-items: center;
+}
+.main_search {
+  width: 962px;
+  height: 48px;
+  margin-top: 38px;
+  background: url(IMG/Shape.svg) no-repeat center left 2px;
+  padding-left: 30px;
+  font-family: "Roboto";
+  border: none;
+  font-size: 16px;
+}
+.strip_search {
+  width: 956px;
+  height: 1px;
+  background: #757575;
+  opacity: 30%;
+  margin-bottom: 70px;
+}
