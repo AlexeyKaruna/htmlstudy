@@ -46,7 +46,28 @@ header {
   background: #262626;
   margin-left: 16px;
 }
-.header_image {
+.header_image_left {
+  margin-right: 13px;
+  margin-left: 7px;
+}
+.header_image_right {
   margin-right: 4px;
   margin-left: 25px;
+}
+.header_location {
+  width: 292px;
+  font-family: "Roboto", sans-serif;
+  background: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: 12px 8px;
+  color: #121212;
+  background: url(IMG/Group.svg) no-repeat center left 7px;
+  padding-left: 23px;
+}
+::-webkit-input-placeholder {
+  color: black;
+}
+button {
+  cursor: pointer;
 }
