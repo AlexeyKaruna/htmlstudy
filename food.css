@@ -1,6 +1,5 @@
 .food_card {
-  background-color: darkorange;
-  text-align: center;
+  text-align: left;
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -83,10 +82,9 @@ main {
   padding-left: 30px;
   font-family: "Roboto";
   border: none;
-  border-bottom: 1px;
-  border-bottom-color: #757575;
+  border-bottom: 1px solid #757575;
 }
-input[type="text"]::placeholder {
+input::placeholder {
   color: #626262;
 }
 .main_text_moscow {
@@ -98,4 +96,47 @@ input[type="text"]::placeholder {
 }
 .food_card_img {
   width: 100%;
+  margin-bottom: 16px;
+}
+.food_card:hover {
+  background-color: #d4cfcf;
+}
+.food_card_text_1_line {
+  font-family: Roboto;
+  color: #1d1d1d;
+  margin-bottom: 4px;
+}
+.food_card_text_2_line {
+  color: #626262;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.food_card_text_3_line {
+  font-family: Roboto;
+  font-size: 13px;
+  color: #1d1d1d;
+  padding-bottom: 20px;
+}
+footer {
+  margin-top: 80px;
+  background-color: #262626;
+}
+.footer_logo {
+  padding-top: 56px;
+  margin-bottom: 40px;
+}
+.footer_strip_1 {
+  width: 956px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.4;
+  margin-bottom: 32px;
+}
+.footer_language_selection {
+  border-radius: 2px;
+  background-color: #3b3b3b;
+  width: 227px;
+  height: 40px;
+  border: none;
+  background: url(IMG/world.svg) no-repeat center left 16px;
 }
