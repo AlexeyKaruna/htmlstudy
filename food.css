@@ -132,11 +132,21 @@ footer {
   opacity: 0.4;
   margin-bottom: 32px;
 }
-.footer_language_selection {
-  border-radius: 2px;
-  background-color: #3b3b3b;
-  width: 227px;
+select {
   height: 40px;
+  width: 227px;
+  background-color: #3b3b3b;
+  border-radius: 2px;
   border: none;
-  background: url(IMG/world.svg) no-repeat center left 16px;
+  padding-left: 48px;
+  color: #ffffff;
+}
+.select_container {
+  position: relative;
+}
+.select_img {
+  width: 16px;
+  position: absolute;
+  left: 16px;
+  bottom: 12.4px;
 }
