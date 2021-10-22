@@ -61,7 +61,7 @@ header {
   border-radius: 2px;
   padding-left: 36px;
   color: #121212;
-  background: url(IMG/Group.svg) no-repeat center left 12px;
+  background: url(IMG/icons/Group.svg) no-repeat center left 12px;
   height: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -129,7 +129,15 @@ footer {
   height: 1px;
   background-color: #ffffff;
   opacity: 0.4;
+}
+.footer_strip.about {
   margin-bottom: 32px;
+}
+.footer_strip.mobile {
+  margin-bottom: 40px;
+}
+.footer_strip.copyright {
+  margin-top: 40px;
 }
 select {
   height: 40px;
@@ -152,11 +160,12 @@ select {
 }
 .footer_text {
   font-size: 13px;
-  color: #ffffff;
   line-height: 15px;
 }
-.footer_text > div {
+.footer_text > a {
   margin-bottom: 23px;
+  color: #ffffff;
+  display: block;
 }
 .footer_text_copyright {
   font-size: 11px;
@@ -164,6 +173,9 @@ select {
   line-height: 13px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+a {
+  text-decoration: none;
 }
 .footer_hashtag {
   color: #49a144;
@@ -188,8 +200,6 @@ select {
 }
 .footer_mobile_img img {
   padding: 0 20px;
-  padding-top: 8px;
-  padding-bottom: 40px;
 }
 .footer_btn_up {
   width: 80px;
