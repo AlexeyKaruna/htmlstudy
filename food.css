@@ -69,6 +69,18 @@ header {
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.mobile_header {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .desktop_header {
+    display: none;
+  }
+  .mobile_header {
+    display: block;
+  }
+}
 
 button {
   cursor: pointer;
