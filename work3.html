@@ -5,7 +5,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
-    <link rel="stylesheet" href="grid.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.css"
+    />
     <link rel="stylesheet" href="food.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -18,64 +21,35 @@
     <title>Grid-lesson</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <header class="desktop_header">
-          <div class="container">
-            <div class="row">
-              <div class="col-2">
-                <div class="header_item">
-                  <img src="IMG/icons/logo.svg" />
-                </div>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-1">
-                <div class="header_item">
-                  <button class="header_btn">ASAP</button>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="header_item">
-                  <div class="header_text-to">to</div>
-                  <input
-                    type="text"
-                    value=" ul. Bolshaya  Dmitrovka,22"
-                    class="header_location"
-                  />
-                </div>
-              </div>
-              <div class="col-1"></div>
-              <div class="col-3">
-                <div class="header_item">
-                  <button class="header_btn">Sign in</button>
-                  <button class="header_btn dark">Register</button>
-                  <img class="header_image_right" src="IMG/icons/basket.svg" />
-                </div>
-              </div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-5 col-md-2 col-lg-2">
+            <div class="header_item">
+              <img class="header_logo" src="IMG/icons/logo.svg" />
             </div>
           </div>
-        </header>
-        <header class="mobile_header">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-5">
-                <div class="header_item">
-                  <img src="IMG/icons/logo.svg" />
-                </div>
-              </div>
-              <div class="col-xs-1"></div>
-
-              <div class="col-xs-6">
-                <div class="header_item">
-                  <button class="header_btn">Sign in</button>
-                  <button class="header_btn dark">Register</button>
-                </div>
-              </div>
+          <div class="col-xs-1 col-md-5 col-lg-5 col-lg-offset-1">
+            <div class="header_item">
+              <button class="header_btn asap">ASAP</button>
+              <div class="header_text-to">to</div>
+              <input
+                type="text"
+                value=" ul. Bolshaya  Dmitrovka,22"
+                class="header_location"
+              />
             </div>
           </div>
-        </header>
+          <div class="col-xs-6 col-md-4 col-lg-3 col-md-offset-1">
+            <div class="header_item buttons_right">
+              <button class="header_btn sign_in">Sign in</button>
+              <button class="header_btn dark">Register</button>
+              <img class="header_image_basket" src="IMG/icons/basket.svg" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
     <main>
       <div class="container">
         <div class="row">
@@ -85,6 +59,22 @@
               placeholder="Search for reastaurant or cuisine"
               class="main_search"
               id="main_search"
+            />
+          </div>
+          <div class="col-xs-2">
+            <div class="main_text when">When</div>
+          </div>
+          <div class="col-xs-9 col-xs-offset-1">
+            <div class="main_text to">To</div>
+          </div>
+          <div class="col-xs-3">
+            <button class="main_btn_asap">ASAP</button>
+          </div>
+          <div class="col-xs-9">
+            <input
+              type="text"
+              value=" ul. Bolshaya  Dmitrovka,22"
+              class="main_location"
             />
           </div>
           <div class="col-xs-12 col-md-12 col-lg-12">
@@ -205,13 +195,13 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-xs-8 col-md-4 col-lg-3">
             <img src="IMG/icons/white-logo.svg" class="footer_logo" />
           </div>
-          <div class="col-12">
+          <div class="col-xs-12">
             <div class="footer_strip about"></div>
           </div>
-          <div class="col-3">
+          <div class="col-xs-7 col-md-3 col-lg-3">
             <div class="select_container">
               <img src="IMG/icons/world.svg" class="select_img" />
               <select>
@@ -236,29 +226,27 @@
               </a>
             </div>
           </div>
-          <div class="col-1"></div>
-          <div class="col-3">
+          <div class="col-xs-12 col-md-3 col-md-offset-1">
             <div class="footer_text">
               <a href="#">About UberEats</a>
               <a href="#">Become a Delivery Partner</a>
               <a href="#">Become a Restaurant Partner</a>
             </div>
           </div>
-          <div class="col-1"></div>
-          <div class="col-2">
+          <div class="col-xs-12 col-md-2 col-md-offset-1">
             <div class="footer_text">
               <a href="#">See all cities</a>
               <a href="#">Pricing</a>
               <a href="#">Help</a>
-              <a href="#">FAQs</a>
             </div>
+            <div class="footer_text FAQs"><a href="#">FAQs</a></div>
           </div>
-          <div class="col-2"></div>
-          <div class="col-12">
+
+          <div class="col-xs-12">
             <div class="footer_strip mobile"></div>
           </div>
-          <div class="col-4"></div>
-          <div class="col-12">
+
+          <div class="col-xs-12">
             <div class="footer_mobile_img">
               <a href="#">
                 <img src="IMG/icons/appstore.svg" />
@@ -268,24 +256,22 @@
               </a>
             </div>
           </div>
-          <div class="col-12">
+          <div class="col-xs-12">
             <div class="footer_strip copyright"></div>
           </div>
-          <div class="col-3">
-            <div class="footer_text_copyright">
+          <div class="col-xs-12 col-md-3">
+            <div class="footer_text_copyright Inc">
               © 2017 Uber Technologies Inc.
             </div>
           </div>
-          <div class="col-2"></div>
-          <div class="col-1">
+          <div class="col-xs-12 col-md-1 col-md-offset-1">
             <a href="#">
               <div class="footer_text_copyright">Privacy</div>
             </a>
           </div>
-          <div class="col-3"></div>
-          <div class="col-1">
+          <div class="col-xs-12 col-md-1 col-md-offset-3">
             <a href="#">
-              <div class="footer_text_copyright">Terms</div>
+              <div class="footer_text_copyright terms">Terms</div>
             </a>
           </div>
         </div>

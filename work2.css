@@ -2,16 +2,12 @@
   height: 80px;
   background-color: rgb(139, 243, 139);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 95px;
-  padding-right: 95px;
-}
 
-button {
-  height: 20px;
-  background-color: mediumturquoise;
+  align-items: center;
 }
 .button_1 {
-  margin-right: 10px;
+  margin-left: auto;
+}
+.BUTTON_3 {
+  margin-left: auto;
 }

@@ -1,6 +1,7 @@
 body {
   font-family: Roboto, sans-serif;
 }
+
 .food_card {
   text-align: left;
   margin-top: 8px;
@@ -9,11 +10,11 @@ body {
 header {
   background: #ffffff;
   box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
-  display: flex;
-  align-content: center;
+  opacity: 1;
   position: fixed;
   left: 0px;
   right: 0px;
+  top: 0px;
 }
 
 * {
@@ -27,38 +28,65 @@ header {
 
 .header_text-to {
   color: #626262;
-  width: 14px;
   height: 19px;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  margin-right: 7px;
+  margin-right: 10px;
+  margin-left: 10px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header_text-to {
+    display: block;
+  }
 }
 .header_btn {
+  height: 40px;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
   padding: 12px 8px;
   background: none;
   color: #1d1d1d;
+  font-size: 11px;
+}
+.header_btn.sign_in {
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .header_btn {
+    font-size: 13px;
+  }
 }
 
 .header_btn.dark {
   border: 1px solid #262626;
   color: #ffffff;
   background: #262626;
-  margin-left: 16px;
+  margin-left: 12px;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .header_btn.dark {
+    margin-left: 16px;
+  }
 }
 .header_image_left {
   margin-right: 13px;
   margin-left: 7px;
 }
-.header_image_right {
+.header_image_basket {
   margin-right: 4px;
   margin-left: 25px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header_image_basket {
+    display: block;
+  }
 }
 .header_location {
-  width: 292px;
   background: none;
   border: 1px solid #e0e0e0;
   border-radius: 2px;
@@ -68,29 +96,52 @@ header {
   height: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
-}
-.mobile_header {
   display: none;
 }
-
-@media (max-width: 576px) {
-  .desktop_header {
-    display: none;
-  }
-  .mobile_header {
+@media (min-width: 768px) {
+  .header_location {
     display: block;
   }
+}
+.header_logo {
+  height: 11px;
+}
+@media (min-width: 576px) {
+  .header_logo {
+    height: 13px;
+  }
+}
+.asap {
+  display: none;
+}
+@media (min-width: 768px) {
+  .asap {
+    display: block;
+  }
+}
+
+.header_item.buttons_right {
+  display: flex;
+  justify-content: end;
+  width: 100%;
 }
 
 button {
   cursor: pointer;
 }
 main {
-  margin-top: 79px;
+  padding-top: 72px;
+  background-color: #f2f2f2;
+  padding-bottom: 68px;
 }
-
+@media (min-width: 991px) {
+  main {
+    background-color: #ffffff;
+    padding-bottom: 100px;
+  }
+}
 .main_search {
-  width: 962px;
+  width: 100%;
   height: 48px;
   margin-top: 32px;
   background: url(IMG/icons/Shape.svg) no-repeat center left 1.2px;
@@ -98,14 +149,73 @@ main {
   border: none;
   border-bottom: 1px solid #757575;
 }
+.main_text {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  font-size: 11px;
+  line-height: 13px;
+  color: #626262;
+}
+.main_text.when {
+  display: block;
+}
+@media (min-width: 576px) {
+  .main_text.when {
+    display: none;
+  }
+}
+.main_text.to {
+  display: block;
+}
+@media (min-width: 576px) {
+  .main_text.to {
+    display: none;
+  }
+}
+.main_btn_asap {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  background: none;
+  color: #1d1d1d;
+  font-size: 13px;
+}
+@media (min-width: 576px) {
+  .main_btn_asap {
+    display: none;
+  }
+}
+.main_location {
+  background: none;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding-left: 36px;
+  color: #121212;
+  background: url(IMG/icons/Group.svg) no-repeat center left 12px;
+  height: 40px;
+}
+@media (min-width: 576px) {
+  .main_location {
+    display: none;
+  }
+}
 input::placeholder {
   color: #626262;
 }
 .main_text_moscow {
-  margin-top: 56px;
-  margin-bottom: 16px;
+  margin-top: 40px;
+  margin-bottom: 14px;
   font-size: 22px;
+  line-height: 34px;
   color: #1d1d1d;
+}
+@media (min-width: 576px) {
+  .main_text_moscow {
+    margin-top: 56px;
+    margin-bottom: 16px;
+  }
 }
 .food_card_img {
   width: 100%;
@@ -133,12 +243,12 @@ input::placeholder {
   line-height: 21px;
 }
 footer {
-  margin-top: 80px;
   background-color: #262626;
 }
+
 .footer_logo {
   padding-top: 56px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 .footer_strip {
   height: 1px;
@@ -149,14 +259,24 @@ footer {
   margin-bottom: 32px;
 }
 .footer_strip.mobile {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
+}
+@media (min-width: 576px) {
+  .footer_strip.mobile {
+    margin-bottom: 40px;
+  }
 }
 .footer_strip.copyright {
-  margin-top: 40px;
+  margin-top: 24px;
+}
+@media (min-width: 576px) {
+  .footer_strip.copyright {
+    margin-top: 40px;
+  }
 }
 select {
+  width: 100%;
   height: 40px;
-  width: 227px;
   background-color: #3b3b3b;
   border-radius: 2px;
   border: none;
@@ -182,11 +302,36 @@ select {
   color: #ffffff;
   display: block;
 }
+.footer_text.FAQs {
+  margin-bottom: 40px;
+}
+@media (min-width: 576px) {
+  .footer_text.FAQs {
+    margin-bottom: 0px;
+  }
+}
 .footer_text_copyright {
   font-size: 11px;
   color: #ffffff;
   line-height: 13px;
+  margin-bottom: 24px;
+}
+@media (min-width: 576px) {
+  .footer_text_copyright {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+.footer_text_copyright.Inc {
   margin-top: 40px;
+  margin-bottom: 24px;
+}
+@media (min-width: 576px) {
+  .footer_text_copyright.Inc {
+    margin-bottom: 40px;
+  }
+}
+.footer_text_copyright.terms {
   margin-bottom: 40px;
 }
 a {
@@ -204,8 +349,14 @@ a {
 }
 .footer_social_networks img {
   padding-right: 7px;
-  padding-top: 17px;
-  padding-bottom: 55px;
+  padding-top: 16px;
+  padding-bottom: 39px;
+}
+@media (min-width: 576px) {
+  .footer_social_networks img {
+    padding-top: 17px;
+    padding-bottom: 55px;
+  }
 }
 
 .footer_mobile_img {
@@ -214,11 +365,16 @@ a {
   align-items: center;
 }
 .footer_mobile_img img {
-  padding: 0 20px;
+  padding: 0 12.5px;
+}
+@media (min-width: 576px) {
+  .footer_mobile_img img {
+    padding: 0 20px;
+  }
 }
 .footer_btn_up {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   background: #59bd5a;
   border-radius: 2px;
   border: none;
@@ -228,4 +384,10 @@ a {
   justify-content: center;
   bottom: 24px;
   right: 16px;
+}
+@media (min-width: 768px) {
+  .footer_btn_up {
+    width: 80px;
+    height: 80px;
+  }
 }
